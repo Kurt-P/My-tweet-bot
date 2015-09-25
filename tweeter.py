@@ -2,7 +2,7 @@
 
 from sys import argv
 from twython import Twython
-import commands
+import subprocess
 import logging
 
 API_KEY = ''
@@ -37,7 +37,7 @@ def tweet(_string, length):
 #    logging.info("Tweeted: %r", line) # Log the line that was tweeted.
 
 def quote():
-    line = commands.getoutput(cmd)
+    line = subprocess.getoutput(cmd)
     line_length = len(line)
 
     if line_length >= 140:
