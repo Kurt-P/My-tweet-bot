@@ -45,3 +45,6 @@ $RECYCLE.BIN/
 Session.vim
 .netrwhist
 *~
+
+# Mis
+*.log
